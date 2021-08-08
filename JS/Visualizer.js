@@ -13,9 +13,9 @@ function visual_speed(){
                 break;
         case 3: speed=100;
                 break;
-        case 4: speed=1000;
+        case 4: speed=500;
                 break;
-        case 5: speed=10000;
+        case 5: speed=1000;
                 break;
     }
     //Decrease numerator to increase speed.
