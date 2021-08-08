@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project: Sorting visualizer</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Size :</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=40>
+                <p>Algorithm Speed : </p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=2>
+                <button id="a_generate">Click! New Array</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting Visualizer</p>
+
+                <div class="algos">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button style="margin-right: 0px;">Heap</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <br>
+            <br>
+            <p> <b>
+                <h2>Selection Sort</h2></b>
+                Time Complexity: O(n^2) <br>
+                <br>
+               
+                <h2>Bubble Sort</h2></b>
+                Time Complexity: O(n^2) <br><br>
+              
+                <h2>Insertion Sort</h2></b>
+                Time Complexity: O(n^2) <br><br>
+
+                <h2>Heap Sort</h2></b>
+                Time Complexity: O(n(log(n))) <br><br>
+
+                <h2>Quick Sort</h2></b>
+                Time Complexity: O(n^2) <br><br>
+
+                <h2>Merge Sort</h2></b>
+                Time Complexity: O(n(log(n))) <br>
+               
+            </p>
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+            <p>Sorting Visualizer can help a beginner or anyone finding difficulty in understanding the working of Sorting Algorithms. This Visualizer can make their work easy and will help understand the algorithm. Here, Viewer can change the array size, speed of algorithm visualizing, and can create a new array with random elements in random order. A viewer can perform Bubble, Selection, Merge, Insertion, Quick and Heap Sorting Algorithm.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+Made with ❤ by SACHIN RAJ
+    </footer>
+
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+    
+</body>
+</html>
